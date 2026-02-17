@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color: #f4f5f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* แถบเมนูนำทาง (Navigation Bar) */
+.navbar {
+    background-color: #6a799d;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 8px 20px;
+    border-radius: 4px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.navbar a:hover, .navbar a.active {
+    background-color: #293b7e;
+    transform: translateY(-2px);
+}
+
+/* กล่องเนื้อหาหลัก */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-radius: 8px;
+}
+
+/* ส่วนหัวโปรไฟล์หน้าแรก */
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.profile-img {
+    width: 140px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #6a799d;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-title h1 {
+    color: #333;
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.badge {
+    background-color: #293b7e;
+    color: white;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.page-header {
+    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* กล่องเนื้อหาแบบมีกรอบ (ดีไซน์ตามต้นฉบับ) */
+.content-box {
+    border: 2px solid #333;
+    padding: 30px 20px 20px 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    background: #fff;
+}
+
+/* กล่องหัวข้อสีน้ำเงินที่ทับเส้นกรอบ */
+.section-title {
+    background-color: #293b7e;
+    color: white;
+    padding: 6px 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: absolute;
+    top: -20px;
+    left: -2px;
+}
+
+/* การตกแต่งลิสต์และข้อความ */
+.list-content {
+    padding-left: 25px;
+}
+
+.list-content li {
+    margin-bottom: 12px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+}
+
+a {
+    color: #293b7e;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-img {
+        width: 120px;
+        height: 150px;
+    }
+    .profile-title h1 {
+        font-size: 1.8rem;
+    }
+}
