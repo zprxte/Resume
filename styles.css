@@ -193,7 +193,15 @@ a:hover {
     margin-top: 15 px;
     align-items: start; 
 }
-
+.cert-card p {
+    padding: 15px;
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.5;
+    text-align: center;
+    flex-grow: 1; 
+}
 .cert-item img {
     width: 100%;
     height: 200px; 
@@ -205,6 +213,7 @@ a:hover {
 .cert-item img:hover {
     transform: scale(1.05);
 }
+
 
 /* Responsive สำหรับหน้าจอขนาดเล็ก (มือถือ/แท็บเล็ต) */
 @media (max-width: 768px) {
@@ -218,5 +227,6 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
 
 
