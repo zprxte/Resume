@@ -193,6 +193,16 @@ a:hover {
     margin-top: 15 px;
     align-items: start; 
 }
+.cert-card {
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
 .cert-card p {
     padding: 15px;
     margin: 0;
@@ -227,6 +237,7 @@ a:hover {
         grid-template-columns: 1fr;
     }
 }
+
 
 
 
